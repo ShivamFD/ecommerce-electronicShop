@@ -1,0 +1,125 @@
+/* General Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0943af;
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+  }
+  
+  /* Brand Name */
+  .brand a {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Center Search Bar */
+  .search-container {
+  flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+ 
+  /* Right Side - Cart & Profile */
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  /* Cart & Login Link */
+  .cart, .login {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .cart:hover, .login:hover {
+    color: #ffd700;
+  }
+  
+  .icon {
+    margin-right: 5px;
+  }
+  
+  /* Cart Badge */
+  .cart-badge {
+    background-color: #ffd700;
+    color: black;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 50%;
+    margin-left: 5px;
+  }
+  
+  /* Dropdown Menu */
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    display: none;
+    flex-direction: column;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: flex;
+  }
+  
+  .dropdown-menu a, .dropdown-menu button {
+    padding: 10px;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .dropdown-menu a:hover, .dropdown-menu button:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .search-container {
+      flex: 0.7;
+    }
+  
+    .brand a {
+      font-size: 1.5rem;
+    }
+  
+    .cart, .login, .dropdown-btn {
+      font-size: 0.9rem;
+    }
+  }
+  
